@@ -16,14 +16,16 @@ OpenCV `dnn` module supports running inference on pre-trained deep learning mode
  
  Download the pre-trained YOLO v3 weights file:
  
- `$ wget https://pjreddie.com/media/files/yolov3.weights`
+ `wget https://github.com/ultralytics/yolov5/releases/download/v6.1/yolov5n6.pt ./models/`
  
+ `https://github.com/ultralytics/yolov5/releases`
+
  Provided all the files are in the current directory, below command will apply object detection on the input image `desk.jpeg`.
 
  ## Test with an image
  
- `$ python3 image_yolo.py --image img/desk.jpeg --config yolov3.cfg --weights yolov3.weights --classes yolov3.txt -o result.jpeg`
+ `$ python3 image_yolo.py --image img/desk.jpeg --config yolov3.cfg --weights yolov3.weights --classes classes.txt -o result.jpeg`
  
   ## Test with a videocamera
 
- `$ python3 video_yolo.py --config yolov3.cfg --weights yolov3.weights --classes yolov3.txt`
+ `$ python3 video_yolo.py --weights yolov5n6.pt --classes classes.txt`

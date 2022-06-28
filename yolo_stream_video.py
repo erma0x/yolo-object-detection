@@ -4,8 +4,8 @@ import time
 import numpy as np
 
 ap = argparse.ArgumentParser()
-ap.add_argument('-c', '--config', required=True,
-                help = 'path to yolo config file')
+#ap.add_argument('-c', '--config', required=True,
+ #               help = 'path to yolo config file')
 ap.add_argument('-w', '--weights', required=True,
                 help = 'path to yolo pre-trained weights')
 ap.add_argument('-cl', '--classes', required=True,
@@ -60,7 +60,9 @@ if __name__ == '__main__':
         conf_threshold = 0.5
         nms_threshold = 0.4
 
-        net = cv2.dnn.readNet(args.weights, args.config)
+        net = cv2.dnn.readNet(args.weights)
+
+        #net = cv2.dnn.readNet(args.weights, args.config)
 
         blob = cv2.dnn.blobFromImage(image, scale, (416,416), (0,0,0), True, crop=False)
 

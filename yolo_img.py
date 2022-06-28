@@ -1,6 +1,7 @@
 import cv2
 import argparse
 import numpy as np
+import torchvision
 
 ap = argparse.ArgumentParser()
 ap.add_argument('-i', '--image', required=True,
