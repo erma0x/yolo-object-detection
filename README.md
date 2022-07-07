@@ -14,7 +14,7 @@ OpenCV `dnn` module supports running inference on pre-trained deep learning mode
 
  ## YOLO (You Only Look Once)
  
- Download the pre-trained YOLO v3 weights file:
+ Download one of the pre-trained YOLO weights file from the following link (example with yolov5n6.pt):
  
  `wget https://github.com/ultralytics/yolov5/releases/download/v6.1/yolov5n6.pt ./models/`
  
