@@ -1,8 +1,7 @@
-# Object detection using YOLO deep learning with OpenCV and Python 
+# Yolo Object Detection
+#### Object detection using yolo deep learning models with opencv and python 
 
 ![](output/result.jpeg?raw=true)
-
-OpenCV `dnn` module supports running inference on pre-trained deep learning models from popular frameworks like Caffe, Torch and TensorFlow. 
 
  ## Dependencies
   * opencv
